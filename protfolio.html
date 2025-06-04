@@ -1,0 +1,464 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="website icon" type="png" href="pic/ak2.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Personal protfolio</title>
+  <style>
+    .circle {
+      width: 10px;
+      height: 10px;
+      background-color: green;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+      margin-top: 7px;
+    }
+
+    @keyframes pulse {
+      0% {
+        background-color: #006400;
+      }
+
+      50% {
+        background-color: #00FF00;
+      }
+
+      100% {
+        background-color: #006400;
+      }
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-b from-[#0f172a]  to-[#111827]">
+  <nav class="bg-[#030712] text-white px-4 py-5 fixed top-0 left-0 w-full bg-[#030712]/30 backdrop-blur-md z-50">
+    <div class="max-w-7xl mx-auto">
+      <!-- Wrap everything in one peer container -->
+      <div class="peer-wrapper relative">
+        <!-- Hidden checkbox -->
+        <input type="checkbox" id="menu-toggle" class="hidden peer" />
+
+        <!-- Top Row -->
+        <div class="flex justify-between items-center">
+          <div class="w-[60px] h-[50px]"> <img src="pic/ak.png" alt=""></div>
+
+          <!-- Mobile Toggle Button -->
+          <label for="menu-toggle" class="md:hidden cursor-pointer">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </label>
+
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-6">
+            <a href="#about" class="hover:text-gray-300 px-2 py-1">About</a>
+            <a href="#Skills" class="hover:text-gray-300 px-2 py-1">skills</a>
+            <a href="#Experience" class="hover:text-gray-300 px-2 py-1">Experience</a>
+            <a href="#Work" class="hover:text-gray-300 px-2 py-1">Work</a>
+            <a href="#contact" class="hover:text-gray-300 px-2 py-1">Contact</a>
+            <a class="bg-[#F9FAFB] text-black px-2 py-1 rounded font-bold"
+              href="dist/Modern Minimalist CV Resume (1).pdf">Download CV</a>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="hidden peer-checked:flex flex-col space-y-2 mt-2 md:hidden border-t-2 border-gray-500">
+          <a href="#about" class="block px-4 py-2 hover:bg-gray-700 rounded">About</a>
+          <a href="#Skills" class="block px-4 py-2 hover:bg-gray-700 rounded">skills</a>
+          <a href="#Experience" class="block px-4 py-2 hover:text-gray-700 rounded">Experience</a>
+          <a href="#Work" class="block px-4 py-2 hover:bg-gray-700 rounded">Work</a>
+          <a href="#contact" class="block px-4 py-2 hover:bg-gray-700 rounded">Contact</a>
+          <a class="bg-[#F9FAFB] text-black px-2 py-1 rounded-3xl font-bold text-center"
+            href="dist/Modern Minimalist CV Resume (1).pdf">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- section part 1 -->
+  <section
+    class="flex flex-col-reverse items-center text-center md:flex-row md:items-start md:text-left md:space-x-6 p-4  justify-around">
+
+    <!-- content -->
+    <div class="pt-40 pl-5">
+      <h1 class="text-4xl text-white font-bold">Hi, I’m Asharib khan 👋</h1>
+
+      <p class="text-white pt-5">I am a front-end developer skilled in HTML5, CSS3, Bootstrap, and Tailwind CSS<br>
+        I enjoy building clean, responsive, and user-friendly websites that work well on all devices. <br>
+        I also use Figma to design modern and intuitive UI layouts <br> before turning them into functional websites.
+      </p>
+      <div class="text-white font-bold pt-5 text-lg"><i class="fa-solid fa-location-dot"></i> Karachi, Pakistan</div>
+
+      <div class="flex justify-center sm:justify-start space-x-4 text-white text-1xl pt-4">
+        <div class="circle"></div>
+        <div class="status-text">Available for new project</div>
+      </div>
+
+      <div class="flex justify-center sm:justify-start space-x-4 text-white text-xl pt-5">
+        <a class="hover:scale-105 transition-transform duration-300" href="https://github.com/asharibkhan333"><i
+            class="fa-brands fa-github"></i></a>
+        <a class="hover:scale-105 transition-transform duration-300"
+          href="https://www.linkedin.com/in/asharib-khan-1a963a353"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://x.com/asharikhan123?t=9BQ1yl5gluHxcsyO4OWg5A&s=09"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- content of profile html and tailwind css  -->
+    <div class="relative w-48 h-52 sm:w-60 sm:h-64 md:w-72 md:h-80 mx-auto mt-40">
+
+      <div class="absolute top-4 left-4 w-[200px] h-[200px] bg-gray-700 rounded-md z-0 mt-10"></div>
+
+      <div class="relative z-10">
+        <img src="pic/422.jpg" alt="Profile" class="w-[200px] h-[200px] object-cover rounded-md mt-10">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- section part 2  -->
+  <div class="text-center pt-10" id="about">
+    <h1 class="bg-slate-800 text-slate-200 px-4 py-2 rounded-full inline-block">About me</h1>
+  </div>
+
+  <div class="bg-slate-900 text-slate-200 px-4 py-12">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-10 relative">
+
+      <div class="relative w-full md:w-1/3 mt-10">
+
+        <div class="absolute top-4 left-4 w-full h-full bg-slate-700 rounded-lg z-0"></div>
+
+
+        <img src="pic/6360.jpg" alt="Profile" class="relative z-10 rounded-lg shadow-lg w-full object-cover">
+      </div>
+
+
+      <div class="md:w-2/3 space-y-5">
+        <h2 class="text-2xl md:text-3xl font-semibold">Curious about me? Here you have it:</h2>
+
+        <p>I'm a passionate, self-taught frontend developer who specializes in crafting clean, responsive, and user-
+          <br>friendly web interfaces using HTML and CSS. I care deeply about user experience, pixel-perfect design,<br>
+          and writing clear, readable, and highly performant code.
+        </p>
+
+        <p>I began my journey as a web developer in 2024, and since then, I’ve been constantly evolving — <br> embracing
+          new challenges, refining my skills, and staying up-to-date with the latest technologies in <br> frontend
+          development.
+
+          I specialize in building user-friendly, visually appealing, pixel-perfect, and fully responsive websites <br>
+          using modern tools like Bootstrap and Tailwind CSS. My focus is on creating smooth user experiences <br>
+          backed by clean, efficient, and scalable code.</p>
+
+        <p>I’m a progressive thinker who enjoys working on products from start to finish — from initial ideation and
+          <br> planning, all the way through design and full-scale development. I find fulfillment in turning ideas into
+          <br> fully functional, user-centered digital experiences.
+        </p>
+
+        <p>When I’m not deep in code, you’ll often find me exploring the tech space on LinkedIn and GitHub, <br> keeping
+          an eye on the exciting journeys of early-stage startups and innovative projects. <br>
+
+          I regularly share updates, insights, and project-related videos on LinkedIn — feel free to connect! You can
+          also follow my work on GitHub, where I post the code behind my personal and collaborative projects.
+        </p>
+
+        <p class="italic text-slate-400">Finally, some quick bits about me:</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-4">
+          <p><strong>🎓</strong> I'm a self-taught developer with a passion for continuous learning.</p>
+          <p><strong>🧪</strong> I love exploring and working with new technologies.</p>
+          <p><strong>⚡</strong> I’m a quick learner and adapt easily to new tools and frameworks.</p>
+          <p><strong>📚</strong> Currently pursuing a Diploma in Software Engineering.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div id="Skills">
+    <div class="text-center pt-10">
+      <h1 class="bg-slate-800 text-slate-200 px-4 py-2 rounded-full inline-block">Skills</h1>
+      <p class="text-slate-300 italic pt-4">The skills, tools and technologies I am really good at:</p>
+    </div>
+
+    <section class="flex flex-wrap justify-center gap-8 mt-20 pb-10">
+      <!-- HTML -->
+      <div class="flex flex-col items-center">
+        <img class="h-12 w-12" src="pic/html.png" alt="html">
+        <span class="mt-2 text-white text-sm">HTML5</span>
+      </div>
+
+      <!-- CSS -->
+      <div class="flex flex-col items-center">
+        <img class="h-12 w-12" src="pic/css.png" alt="css">
+        <span class="mt-2 text-white text-sm">CSS3</span>
+      </div>
+
+      <!-- Bootstrap -->
+      <div class="flex flex-col items-center">
+        <img class="h-12 w-12 " src="pic/image (1).png" alt="Bootstrap">
+        <span class="mt-2 text-white text-sm">Bootstrap</span>
+      </div>
+
+      <!-- Tailwind css -->
+      <div class="flex flex-col items-center">
+        <img class="h-12 w-12" src="pic/tail.png" alt="Tailwind css">
+        <span class="mt-2 text-white text-sm">Tailwind CSS</span>
+      </div>
+
+      <!-- Figma -->
+      <div class="flex flex-col items-center">
+        <img class="h-12 w-12" src="pic/figma.png" alt="Figma">
+        <span class="mt-2 text-white text-sm">Figma</span>
+      </div>
+
+      <!-- Github -->
+      <div class="flex flex-col items-center">
+        <img class="h-12 w-12 invert brightness-200" src="pic/github.png" alt="Github">
+        <span class="mt-2 text-white text-sm">GitHub</span>
+      </div>
+  </div>
+  </section>
+
+  <!-- Experience front-end developer -->
+  <section id="Experience">
+    <div class="text-center pt-10">
+      <h1 class="bg-slate-800 text-slate-200 px-4 py-2 rounded-full inline-block">Experience</h1>
+      <p class="text-slate-300 italic pt-4">Here is a quick summary of my most recent experiences:</p>
+    </div>
+    <div class="bg-[#1e293b] text-white p-6 rounded-lg max-w-2xl mx-auto mt-10 mb-10">
+      <div class="flex justify-between items-start flex-wrap">
+        <div class="flex items-center space-x-4">
+          <img src="pic/logo-upwork.png" alt="Upwork Logo" class="w-20 h-auto" />
+          <div>
+            <h2 class="text-lg font-bold ml-20">Sr. Frontend Developer</h2>
+          </div>
+
+        </div>
+        <ul class="list-disc pl-6 mt-4 text-gray-300 space-y-2 text-sm">
+          <li>Developed responsive and modern websites using HTML, CSS, Bootstrap, and Tailwind CSS.</li>
+          <li>Created clean UI layouts, reusable components, and mobile-first designs.</li>
+          <li>Focused on cross-browser compatibility and performance optimization.</li>
+          <li>Built user-friendly interfaces with consistent design patterns.</li>
+          <li>Collaborated in team projects using Git and GitHub for version control.</li>
+          <li>Worked on multiple real-world projects to sharpen front-end development skills.</li>
+        </ul>
+      </div>
+  </section>
+
+  <!-- Work section -->
+  <div id="Work">
+    <div class="text-center pt-10">
+      <h1 class="bg-slate-800 text-slate-200 px-4 py-2 rounded-full inline-block">Work</h1>
+      <p class="text-slate-300 italic pt-4 pb-10">Some of the noteworthy projects I have built:</p>
+    </div>
+
+    <section class="max-w-6xl mx-auto bg-[#0f172a] text-white p-6 md:flex rounded-xl mt-10">
+
+      <a href="https://devfoodie.netlify.app" class="md:w-1/2 w-full mb-4 md:mb-0">
+        <img src="pic/project1.png" alt="project" class="rounded-lg hover:scale-105 transition-transform duration-300">
+      </a>
+
+      <div class="md:w-1/2 md:pl-8 space-y-4">
+        <h2 class="text-2xl font-bold mt-5">Foodie</h2>
+        <p class="text-gray-300">
+          A responsive single-page food delivery landing site built with HTML and CSS, featuring sections like menu,
+          reviews, and call-to-action — designed for a smooth user experience on all devices.
+        </p>
+
+        <!-- Tags -->
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">HTML5</span>
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">CSS3</span>
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">Bootstrap</span>
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 2nd-project -->
+
+    <section class="max-w-6xl mx-auto bg-[#0f172a] text-white p-6 md:flex rounded-xl mt-10">
+
+      <a href="https://nexusaweb.netlify.app" class="md:w-1/2 w-full mb-4 md:mb-0">
+        <img src="pic/project2.png" alt="project" class="rounded-lg hover:scale-105 transition-transform duration-300">
+      </a>
+
+      <div class="md:w-1/2 md:pl-8 space-y-4">
+        <h2 class="text-2xl font-bold mt-5">Ticket</h2>
+        <p class="text-gray-300">
+          A modern and responsive single-page ticket booking website built using HTML and CSS, showcasing features
+          like event listings, ticket details, and a simple booking section — optimized for clean layout and user
+          experience.
+        </p>
+
+        <!-- Tags -->
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">HTML5</span>
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">CSS3</span>
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">Bootstrap</span>
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 3rd-project -->
+
+    <section class="max-w-6xl mx-auto bg-[#0f172a] text-white p-6 md:flex rounded-xl mt-10 pb-20">
+
+      <a href="https://rest-dev.netlify.app/" class="md:w-1/2 w-full mb-4 md:mb-0">
+        <img src="pic/project3.png" alt="project" class="rounded-lg hover:scale-105 transition-transform duration-300">
+      </a>
+
+      <div class="md:w-1/2 md:pl-8 space-y-4">
+        <h2 class="text-2xl font-bold mt-5">SUSHI</h2>
+        <p class="text-gray-300">
+          Enjoy delicious, fresh, and hygienic food in a cozy environment. We serve desi and continental dishes with
+          love and quality. Dine in or order online!
+        </p>
+
+        <!-- Tags -->
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">HTML5</span>
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">CSS3</span>
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">Bootstrap</span>
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- project4 -->
+    <section class="max-w-6xl mx-auto bg-[#0f172a] text-white p-6 md:flex rounded-xl mt-10 pb-20">
+
+      <a href="https://coffee-dev.netlify.app/" class="md:w-1/2 w-full mb-4 md:mb-0">
+        <img src="pic/project4.png" alt="project" class="rounded-lg hover:scale-105 transition-transform duration-300">
+      </a>
+
+      <div class="md:w-1/2 md:pl-8 space-y-4">
+        <h2 class="text-2xl font-bold mt-5">Coffe-shop</h2>
+        <p class="text-gray-300">
+          Relax, sip, and enjoy the perfect cup of coffee. We serve freshly brewed coffee, tasty snacks, and a cozy
+          atmosphere to make your day better. Visit us or order online!
+        </p>
+
+        <!-- Tags -->
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">HTML5</span>
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">CSS3</span>
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">Bootstrap</span>
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- project5 -->
+    <section class="max-w-6xl mx-auto bg-[#0f172a] text-white p-6 md:flex rounded-xl mt-10 pb-20">
+
+      <a href="https://solus-web.netlify.app/" class="md:w-1/2 w-full mb-4 md:mb-0">
+        <img src="pic/project5.png" alt="project" class="rounded-lg hover:scale-105 transition-transform duration-300">
+      </a>
+
+      <div class="md:w-1/2 md:pl-8 space-y-4">
+        <h2 class="text-2xl font-bold mt-5">Solus</h2>
+        <p class="text-gray-300">
+          This website is a simple and clean design project built using HTML and CSS. It showcases the power of
+          front-end development with a modern layout, responsive design, and smooth user experience. Created with
+          passion for learning and creativity.
+        </p>
+
+        <!-- Tags -->
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">HTML5</span>
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">CSS3</span>
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">Bootstrap</span>
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- project6 -->
+    <section class="max-w-6xl mx-auto bg-[#0f172a] text-white p-6 md:flex rounded-xl mt-10 pb-20">
+
+      <a href="https://rivo-web.netlify.app/" class="md:w-1/2 w-full mb-4 md:mb-0">
+        <img src="pic/project6.png" alt="project" class="rounded-lg hover:scale-105 transition-transform duration-300">
+      </a>
+
+      <div class="md:w-1/2 md:pl-8 space-y-4">
+        <h2 class="text-2xl font-bold mt-5">Rivo</h2>
+        <p class="text-gray-300">
+          Rivo is a modern, responsive website designed using HTML and CSS. It features a clean layout, user-friendly
+          interface, and elegant styling — perfect for showcasing a brand, product, or business online. This project
+          reflects creativity and front-end development skills.
+        </p>
+
+        <!-- Tags -->
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">HTML5</span>
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">CSS3</span>
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">Bootstrap</span>
+          <span class="bg-gray-800 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- contact section -->
+  <section class="text-center text-white pb-10" id="contact">
+    <div class="pt-10">
+      <h1 class="bg-slate-800 text-slate-200 px-4 py-2 rounded-full inline-block">Get in touch</h1>
+      <p class="text-slate-300 italic pt-4 pb-10">What’s next? Feel free to reach out to me if you're looking for <br>
+        a developer, have a query, or simply want to connect.</p>
+    </div>
+
+    <!-- Email section -->
+    <div class="flex justify-center gap-4 items-center">
+      <i class="fa-solid fa-envelope text-[20px]"></i>
+      <span class="text-1xl text-slate-300">asharibasharibkhan162@gmail.com</span>
+    </div>
+
+    <!-- Phone section -->
+    <div class="flex justify-center gap-4 items-center mt-4">
+      <i class="fa-solid fa-phone text-[20px]"></i>
+      <span class="text-1xl text-slate-300">03192117647</span>
+    </div>
+
+    <!-- platfroms contact -->
+    <div class="italic text-slate-400 mt-8 text-1xl font-semibold">
+      <p>You may also find me on these platforms!</p>
+    </div>
+
+    <!-- Icon -->
+    <div class="flex justify-center space-x-4 text-white text-xl pt-3">
+      <a class="hover:scale-105 transition-transform duration-300" href="https://github.com/asharibkhan333"><i
+          class="fa-brands fa-github"></i></a>
+
+      <a class="hover:scale-105 transition-transform duration-300"
+        href="https://www.linkedin.com/in/asharib-khan-1a963a353"><i class="fa-brands fa-linkedin"></i></a>
+
+      <a class="hover:scale-105 transition-transform duration-300"
+        href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=qp451he"><i
+          class="fa-brands fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="mt-auto">
+    <div
+      class="flex justify-center items-center bg-[#030712] h-12 px-4 py-3 text-sm sm:text-base italic text-slate-200">
+      <p class="max-w-screen-md">2024 | Designed and coded with ❤️️ by Asharib khan:</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
